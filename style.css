@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap');
+
+:root {
+  --color1: #6a5c40; /*highlights*/
+  --color2: #e4ded3; /*background*/
+  --color3: #f7f5f2; /*div's*/
+  --color4: #14110c; /*shadowss*/
+}
+
+a:hover {
+  color: var(--color1);
+}
+
+div {
+  width: auto;
+}
+
+body {
+  background-color: var(--color2);
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 45px;
+}
+h2 {font-family: 'Lato', sans-serif;}
+
+p {font-family: 'Lato', sans-serif;}
+li {font-family: 'Lato', sans-serif;
+   line-height: 1.5;
+  padding: 5px;
+}
+
+#title {
+  text-align: center; 
+  padding: 20px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-img {
+  width: 600px;
+  position: relative;
+  top: 10px;
+  display: block;
+  margin: auto;
+  box-shadow: 0px 8px 6px -6px var(--color4);
+  border-radius: 3px;
+  border: 1px solid var(--color4);
+}
+
+#img-caption {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+#img-div {
+  background: var(--color3);
+  box-shadow: 0px 0px 25px -5px var(--color4);
+  border-radius: 3px;
+}
+
+#tribute-info {
+  max-width: 600px;
+  text-align: left;
+  margin: auto;
+}
+
+.link {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.container {
+  
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap: 10px 10px;
+  padding: 10px;
+  background: var(--color3);
+  box-shadow: 0px 0px 25px -0px var(--color4);
+  max-width: 1000px;
+  margin: auto;
+  
+}
+
+@media (max-width: 930px) {
+  .gallery {
+    grid-template-rows: repeat(5, minmax(1fr, 300px));
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 630px) {
+  .gallery {
+    grid-template-rows: repeat(9, minmax(150px, 1fr));
+    grid-template-columns:repeat(1, minmax(150px, 1fr));
+  }
+}
+
+.photo {
+  width: 100%;
+  box-shadow: 0 8px 6px -6px var(--color4);
+  border-radius: 3px; 
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+#photo-cont2 {}
+#photo-cont3 {}
+#photo-cont4 {}
+#photo-cont5 {}
+#photo-cont6 {}
+#photo-cont7 {}
+#photo-cont8 {}
+#photo-cont9 {}
